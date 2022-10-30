@@ -3,8 +3,11 @@
 This readme file will help replicate the results in the paper titled: "Constructive critique to use of transfer entropy in inference of bidirectional interactions in heterogeneous systems".
 
 There are 2 main directories:
+
 Data: Contains links to the sources of the two real world example datasets used in this work
+
 Code: Contains all the codes required to replicate the results of this work.
+
 
 Code directory contains the following sub-directories, each for a different problem (analytical, numerical, or data-based):
 
