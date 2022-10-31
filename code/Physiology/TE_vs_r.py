@@ -12,14 +12,14 @@ plt.rcParams.update({
     "font.family": "arial"
     })
 
-data = loadtxt("./SantaFe_data/b1.txt",usecols = (0,1,2))
+data = loadtxt("./../../data/SantaFe_data/b1.txt",usecols = (0,1,2))
 
 # Data is at a sampling frequency of 0.5 s
 hr1 = data[:,0] # Heart-rate
 resp1 = data[:,1] # Respiration force (same as breath rate)
 dt = 0.5
 
-data = loadtxt("./SantaFe_data/b2.txt",usecols = (0,1,2))
+data = loadtxt("./../../data/SantaFe_data/b2.txt",usecols = (0,1,2))
 
 # Data is at a sampling frequency of 0.5 s
 hr2 = data[:,0] # Heart-rate
@@ -52,17 +52,14 @@ ax1.plot(tarr[400:1800],y[400:1800], color = "b", label = "breath rate")
 ax1.set_xlabel(r"$t$ (seconds)"); ax1.set_ylabel(r"breath rate ($BR$)")
 ax1.set_ylim([-4,4])
 ax1.set_xlim([200,900])
-fig.savefig("./figures2/normBR_v_t.eps", dpi=150, bbox_inches="tight")
+fig.savefig("./normBR_v_t.eps", dpi=150, bbox_inches="tight")
 
 fig, (ax1)  = plt.subplots(1, 1,sharey='row',figsize=(7, 2.5))
 ax1.plot(tarr[400:1800],x[400:1800], color = "k", label = "heart rate")
 ax1.set_xlabel(r"$t$ (seconds)"); ax1.set_ylabel(r"heart rate ($HR$)")
 ax1.set_ylim([-2,2])
 ax1.set_xlim([200,900])
-fig.savefig("./figures2/normHR_v_t.eps", dpi=150, bbox_inches="tight")
-
-print("Paused!")
-time.sleep(50000)
+fig.savefig("./normHR_v_t.eps", dpi=150, bbox_inches="tight")
 
 # # parameters
 sampN = 1 # skip these many, i.e. downsampling fac 
