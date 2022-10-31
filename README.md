@@ -53,3 +53,6 @@ Code directory contains the following sub-directories, each for a different prob
 - “Plot_TE_v_gamma.py” is a code that plots transfer entropy, controlled transfer entropy, and fully controlled transfer entropy as a function of nonlinearity coefficient gamma
 - “transfer_entropy3.py” is a function called to compute the value of  transfer entropy, controlled transfer entropy, and fully controlled transfer entropy
 - “compute_entropy.py” is a function that computes joint entropy of any given dimension
+
+
+NOTE: Please create the relevant files/ and figures/ folders within each of the subdirectories if executing the codes as is.
