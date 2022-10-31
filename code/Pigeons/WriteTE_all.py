@@ -26,9 +26,9 @@ isamp = 0
 samptarr = np.array([0.2]) # make sure sampt/dt = integer 
 sampN = int(samptarr[isamp]/dt) # skip these many,i.e. downsampling fac
 
-str1 = './data/experimentalSelectedReleases'
-str2 = './data/flightsExperimentalGen2to5'
-str3 = './data/encoded/flightsSS1'
+str1 = './../../data/Pigeon_data/experimentalSelectedReleases'
+str2 = './../../data/Pigeon_data/flightsExperimentalGen2to5'
+str3 = './../../data/Pigeon_data/encoded/flightsSS1'
 
 DF1 = pd.read_csv(str1 + '.csv', index_col=0)
 within250 = DF1["Within250"]
