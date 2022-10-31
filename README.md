@@ -55,4 +55,4 @@ Code directory contains the following sub-directories, each for a different prob
 - “compute_entropy.py” is a function that computes joint entropy of any given dimension
 
 
-NOTE: Please create the relevant files/ and figures/ folders within each of the subdirectories if executing the codes as is.
+NOTE: Please create the relevant files/ and figures/ folders within each of these subdirectories if executing the codes as is.
